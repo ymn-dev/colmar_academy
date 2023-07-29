@@ -2,6 +2,31 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
+}
+h2,
+h3,
+h4,
+h5 {
+  color: rgb(74, 74, 74);
+}
+p {
+  color: rgb(118, 118, 118);
+}
+h2 {
+  font-size: 35px;
+  font-weight: 750;
+}
+h3 {
+  font-weight: 550;
+}
+p,
+date {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.register p {
+  color: white;
 }
 body {
   width: 100%;
@@ -25,6 +50,9 @@ nav a {
 }
 ul {
   list-style: none;
+}
+.logo__container:hover {
+  cursor: pointer;
 }
 .nav__desktop {
   position: sticky;
@@ -93,7 +121,7 @@ header {
 }
 
 .header__container2 h3 {
-  margin: 32px 0 24px;
+  margin: 32px 0;
 }
 
 .register {
@@ -174,12 +202,14 @@ header {
   .article__side__footer {
     position: absolute;
     bottom: 0;
+    color: black;
   }
   .articles article:hover {
+    cursor: pointer;
     background-color: #d0d0d0;
   }
   .learnings {
-    margin: 32px 72px;
+    margin: 16px 56px;
   }
   .learnings h2 {
     margin: 32px 0;
@@ -189,9 +219,16 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    gap: 32px;
+    gap: 32px 16px;
   }
 
+  .learn__item img {
+    padding: 16px;
+  }
+  .learn__item:hover {
+    cursor: pointer;
+    background-color: #d0d0d0;
+  }
   .learning__container div {
     display: flex;
     flex-flow: column;
@@ -239,6 +276,7 @@ header {
     align-items: center;
   }
   .thesis__item:hover {
+    cursor: pointer;
     background-color: #d0d0d0;
   }
   .thesis__item img {
@@ -255,11 +293,14 @@ header {
   footer {
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 24px 30px;
   }
   footer ul {
     display: flex;
     column-gap: 15px;
+  }
+  footer ul:hover {
+    cursor: pointer;
   }
 }
 /*mobile*/
@@ -321,7 +362,7 @@ header {
     margin: 32px 0 16px;
   }
   footer p {
-    margin: 16px;
+    margin: 0 16px;
   }
   footer ul {
     display: none;
