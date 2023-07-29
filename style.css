@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  outline: 2px solid red;
 }
 body {
   width: 100%;
@@ -32,12 +31,13 @@ ul {
   top: 0;
   background-color: #fff;
   display: flex;
-  height: 64px;
+  height: var(--nav-height);
   justify-content: space-between;
   align-items: center;
   width: 100%;
   min-width: 720px;
   padding: 0 24px;
+  z-index: 100;
 }
 
 .nav__desktop ul {
@@ -51,7 +51,6 @@ ul {
 }
 nav ul li:hover {
   background-color: #d0d0d0;
-  /* opacity:0.4; */
 }
 
 .nav__mobile ul {
@@ -59,7 +58,7 @@ nav ul li:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 64px;
+  height: var(--nav-height);
   position: sticky;
   top: 0;
   background-color: #fff;
@@ -176,6 +175,9 @@ header {
     position: absolute;
     bottom: 0;
   }
+  .articles article:hover {
+    background-color: #d0d0d0;
+  }
   .learnings {
     margin: 32px 72px;
   }
@@ -201,6 +203,63 @@ header {
     margin: 16px 0 8px 16px;
     display: flex;
     row-gap: 8px;
+  }
+  .thesis__wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .thesis {
+    margin-bottom: 32px;
+  }
+  .thesis__expo {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    margin: 0 24px;
+  }
+  .thesis__side {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .thesis__expo video {
+    width: 100%;
+  }
+  .thesis__expo h3 {
+    margin: 24px 0 8px;
+  }
+  .thesis h2 {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+  }
+
+  .thesis__item {
+    display: flex;
+    align-items: center;
+  }
+  .thesis__item:hover {
+    background-color: #d0d0d0;
+  }
+  .thesis__item img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+  }
+  .thesis__item__content {
+    display: flex;
+    flex-flow: column;
+    row-gap: 16px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+  footer ul {
+    display: flex;
+    column-gap: 15px;
   }
 }
 /*mobile*/
@@ -245,12 +304,27 @@ header {
   .learnings h2 {
     margin-bottom: 16px;
   }
-  .learning__container h3 {
-    background-color: rgb(216, 216, 216);
-    padding: 16px 0 24px 16px;
+  .learning__text__container h3 {
+    margin: 16px 0 24px 16px;
   }
   .learning__container div {
     width: 100%;
+    background-color: rgb(216, 216, 216);
+  }
+  .thesis__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .thesis__wrapper h2 {
+    margin: 32px 0 16px;
+  }
+  footer p {
+    margin: 16px;
+  }
+  footer ul {
+    display: none;
   }
 }
 /* @media only screen and (max-width: 980){} */
