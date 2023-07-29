@@ -1,3 +1,6 @@
+:root {
+  --nav-height: 64px;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -34,9 +37,6 @@ date {
 }
 body {
   width: 100%;
-}
-:root {
-  --nav-height: 64px;
 }
 a {
   text-decoration: none;
@@ -79,7 +79,7 @@ ul {
   border-radius: 15px;
 }
 nav ul li:hover {
-  background-color: #d0d0d0;
+  opacity: 0.5;
 }
 
 .nav__mobile ul {
@@ -104,8 +104,10 @@ nav ul li:hover {
 .logo__container {
   font-weight: bold;
   display: flex;
-  /* margin-left: 24px; */
   align-items: center;
+}
+.logo__container:hover {
+  opacity: 0.8;
 }
 
 header {
@@ -140,7 +142,9 @@ header {
 .article__content a {
   color: rgb(88, 153, 228);
 }
-
+.article__content a:hover {
+  color: rgb(0, 0, 250);
+}
 .articles {
   padding: 16px 16px;
 }
@@ -302,6 +306,9 @@ header {
     display: flex;
     column-gap: 15px;
   }
+  footer ul li:hover {
+    opacity: 0.5;
+  }
 }
 /*mobile*/
 @media only screen and (max-width: 540px) {
@@ -348,13 +355,14 @@ header {
   .learning__text__container h3 {
     margin: 16px 0 24px 16px;
   }
-  .learning__text__container {
+  .learn__item {
     cursor: pointer;
   }
   .learning__container div {
     width: 100%;
     background-color: rgb(216, 216, 216);
   }
+
   .thesis__wrapper {
     display: flex;
     flex-flow: column;
