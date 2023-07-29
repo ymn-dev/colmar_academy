@@ -10,7 +10,7 @@ body {
 :root {
   --nav-height: 64px;
 }
-a {
+nav a {
   text-decoration: none;
 }
 .nav__desktop {
@@ -97,6 +97,9 @@ header {
   margin: 32px 0 24px;
 }
 
+.header__container2 {
+  width: 100%;
+}
 .register {
   color: white;
   background-color: rgb(74, 74, 74);
@@ -107,6 +110,24 @@ header {
   padding: 8px 0;
 }
 
+.article__content a {
+  color: rgb(88, 153, 228);
+}
+
+.articles {
+  padding: 16px 16px;
+}
+.articles img {
+  width: 100%;
+}
+.article__content {
+  padding: 0 0 64px 16px;
+}
+
+.articles h3 {
+  margin-top: 24px;
+}
+
 /*desktop*/
 @media only screen and (min-width: 541px) {
   .--mobile {
@@ -114,6 +135,35 @@ header {
   }
   #logo {
     height: 60px;
+  }
+  .article__wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .article__side {
+    margin: 32px 24px;
+    width: 60%;
+  }
+  .article__side img {
+    width: 100%;
+  }
+  .articles article {
+    display: flex;
+    padding: 16px;
+  }
+  .articles {
+    padding: 16px 0 0 0;
+  }
+  .articles img.--desktop {
+    width: 35%;
+    height: auto;
+  }
+  .articles h3 {
+    margin-bottom: 8px;
+  }
+  .articles a {
+    display: block;
+    margin-top: 8px;
   }
 }
 /*mobile*/
