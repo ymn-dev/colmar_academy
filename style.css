@@ -25,7 +25,8 @@ h2 {
   font-weight: 750;
 }
 h3 {
-  font-weight: 550;
+  font-size: 18px;
+  font-weight: 600;
 }
 p,
 date {
@@ -139,6 +140,11 @@ header {
   cursor: pointer;
 }
 
+.register:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .article__content a {
   color: rgb(88, 153, 228);
 }
@@ -164,7 +170,10 @@ header {
   flex-flow: column;
   align-items: center;
 }
-
+.articles > article:hover h3,
+.learn__item:hover h3 {
+  opacity: 0.7;
+}
 /*desktop*/
 @media only screen and (min-width: 541px) {
   .--mobile {
