@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline: 2px solid red;
 }
 body {
   width: 100%;
@@ -83,18 +84,23 @@ header {
   align-items: center;
   background-color: rgb(216, 216, 216);
 }
+
+.header__container1 {
+  width: 60%;
+}
 .headerbanner {
   width: 100%;
   padding: 32px 24px;
 }
-.header__container1 {
-  width: 60%;
+
+.header__container2 h3 {
+  margin: 32px 0 24px;
 }
 
 .register {
   color: white;
   background-color: rgb(74, 74, 74);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -110,9 +116,33 @@ header {
     height: 60px;
   }
 }
+/*mobile*/
 @media only screen and (max-width: 540px) {
   .--desktop {
     display: none;
+  }
+  header {
+    flex-flow: column;
+    background-color: rgb(219, 219, 219);
+  }
+  .header__container1 {
+    width: 100%;
+  }
+  .headerbanner {
+    width: 100%;
+    padding: 0 0 32px 0;
+  }
+  .header__container2 {
+    width: 100%;
+    padding: 32px 16px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .register {
+    background-color: rgb(155, 155, 155);
+    width: 100%;
+    margin-top: 0px;
   }
   .thesis__expo video {
     width: 100%;
