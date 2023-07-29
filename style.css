@@ -212,6 +212,19 @@ header {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 90%;
+    margin-bottom: 32px;
+    row-gap: 8px;
+  }
+  .learnings h2 {
+    margin-bottom: 16px;
+  }
+  .learning__container h3 {
+    background-color: rgb(216, 216, 216);
+    padding: 16px 0 24px 16px;
+  }
+  .learning__container div {
+    width: 100%;
   }
 }
 /* @media only screen and (max-width: 980){} */
