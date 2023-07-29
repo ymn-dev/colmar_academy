@@ -4,6 +4,10 @@
   margin: 0;
   font-family: sans-serif;
 }
+img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 h2,
 h3,
 h4,
