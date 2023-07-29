@@ -10,11 +10,13 @@
 
 <body>
   <nav class="nav__desktop --desktop">
-    <div class="logo__container">
-      <img src="./capstone_colmar_assets/images/ic-logo.svg" alt="logo" id="logo">
-      <span class="logo__texts --desktop"><span class="logo__text1">COLMAR</span><span
-          class="logo__text2">ACADEMY</span></span>
-    </div>
+    <a href="#">
+      <div class="logo__container">
+        <img src="./capstone_colmar_assets/images/ic-logo.svg" alt="logo" id="logo">
+        <span class="logo__texts --desktop"><span class="logo__text1">COLMAR</span><span
+            class="logo__text2">ACADEMY</span></span>
+      </div>
+    </a>
     <ul class="menu__container">
       <li class="oncampus">
         <a href="#" class="oncampus__link">
@@ -97,7 +99,7 @@
           <img src="./capstone_colmar_assets/images/information-orientation-mobile.jpg" class="--mobile">
           <div class="article__content">
             <h3>Orientation date</h3>
-            <date>Tue 10/11 & Wed 10/12: 8am-3pm</date><br>
+            <date>Tue 10/11 & Wed 10/12: 8am-3pm</date>
             <a class="arti1__more" target="_blank">Read more</a>
           </div>
         </article>
@@ -124,7 +126,7 @@
     <aside class="learnings">
       <h2>Start learning</h2>
       <section class="learning__container">
-        <div class="learn__softwareengineering">
+        <div class="learn__item">
           <img src="./capstone_colmar_assets/images/course-software.jpg" class="--desktop">
           <div class="learning__text__container">
             <h3>Software engineering</h3>
@@ -132,7 +134,7 @@
             <p class="--desktop">Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
-        <div class="learn__computerart">
+        <div id="learn__computerart" class="learn__item">
           <img src="./capstone_colmar_assets/images/course-computer-art.jpg" class="--desktop">
           <div class="learning__text__container">
             <h3>Computer art</h3>
@@ -141,7 +143,7 @@
             </p>
           </div>
         </div>
-        <div class="learn__design">
+        <div id="learn__design" class="learn__item">
           <img src="./capstone_colmar_assets/images/course-design.jpg" class="--desktop">
           <div class="learning__text__container">
             <h3>Design</h3>
@@ -149,7 +151,7 @@
             <p class="--desktop">User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
-        <div class="learn__data">
+        <div id="learn__data" class="learn__item">
           <img src="./capstone_colmar_assets/images/course-data.jpg" class="--desktop">
           <div class="learning__text__container">
             <h3>Data</h3>
@@ -157,7 +159,7 @@
             <p class="--desktop">Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
-        <div class="learn__business">
+        <div id="learn__business" class="learn__item">
           <img src="./capstone_colmar_assets/images/course-business.jpg" class="--desktop">
           <div class="learning__text__container">
             <h3>Business</h3>
@@ -165,7 +167,7 @@
             <p class="--desktop">Product Development, Business Development, Startup</p>
           </div>
         </div>
-        <div class="learn__marketing">
+        <div id="learn__marketing" class="learn__item">
           <img src="./capstone_colmar_assets/images/course-marketing.jpg" class="--desktop">
           <div class="learning__text__container">
             <h3>Marketing</h3>
@@ -175,7 +177,6 @@
         </div>
       </section>
       <aside class="thesis">
-
         <h2>Thesis exhibits</h2>
         <section class="thesis__wrapper">
           <section class="thesis__expo">
@@ -209,8 +210,12 @@
   <footer>
     <p>&copy2016 Colmar Academy. All rights reserved</p>
     <ul class="footer__license">
-      <li>Terms</li>
-      <li>Privacy</li>
+      <li><a href="#">
+          <p>Terms</p>
+        </a></li>
+      <li><a href="#">
+          <p>Privacy</p>
+        </a></li>
     </ul>
   </footer>
 </body>

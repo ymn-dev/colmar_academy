@@ -34,7 +34,7 @@ body {
 :root {
   --nav-height: 64px;
 }
-nav a {
+a {
   text-decoration: none;
 }
 .nav__desktop {
@@ -50,9 +50,6 @@ nav a {
 }
 ul {
   list-style: none;
-}
-.logo__container:hover {
-  cursor: pointer;
 }
 .nav__desktop {
   position: sticky;
@@ -97,6 +94,7 @@ nav ul li:hover {
   height: 100%;
   align-items: center;
   padding: 0 10%;
+  cursor: pointer;
 }
 
 .logo__container {
@@ -132,6 +130,7 @@ header {
   justify-content: center;
   width: 100%;
   padding: 8px 0;
+  cursor: pointer;
 }
 
 .article__content a {
@@ -299,9 +298,6 @@ header {
     display: flex;
     column-gap: 15px;
   }
-  footer ul:hover {
-    cursor: pointer;
-  }
 }
 /*mobile*/
 @media only screen and (max-width: 540px) {
@@ -348,6 +344,9 @@ header {
   .learning__text__container h3 {
     margin: 16px 0 24px 16px;
   }
+  .learning__text__container {
+    cursor: pointer;
+  }
   .learning__container div {
     width: 100%;
     background-color: rgb(216, 216, 216);
@@ -357,6 +356,16 @@ header {
     flex-flow: column;
     align-items: center;
     margin-bottom: 24px;
+  }
+  .article__content {
+    display: flex;
+    flex-flow: column;
+    row-gap: 16px;
+  }
+
+  .thesis h2 {
+    display: flex;
+    justify-content: center;
   }
   .thesis__wrapper h2 {
     margin: 32px 0 16px;
