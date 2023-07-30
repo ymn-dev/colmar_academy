@@ -35,6 +35,7 @@ date {
 }
 .register p {
   color: white;
+  font-weight: 1;
 }
 body {
   width: 100%;
@@ -181,6 +182,19 @@ header {
   }
   #logo {
     height: 60px;
+  }
+  .header__container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__container2 h2 {
+    font-size: 3.5vw; /* Set a proportional font size for h2 */
+  }
+
+  .header__container2 h3 {
+    font-size: 1.5vw; /* Set a proportional font size for h3 */
+    margin: 2vw 0;
   }
   .article__wrapper {
     width: 100%;
