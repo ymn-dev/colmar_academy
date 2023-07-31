@@ -70,14 +70,13 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-width: 720px;
   padding: 0 24px;
   z-index: 100;
 }
 
 .nav__desktop ul {
   display: flex;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 .nav__desktop ul li {
   padding: 0 8px;
@@ -191,7 +190,9 @@ header {
     display: flex;
     flex-direction: column;
   }
-
+  nav ul li span {
+    font-size: min(20px, calc(0.1px + 1.8vw));
+  }
   h2 {
     font-size: calc(10px + 2.5vw);
     font-weight: 750;
