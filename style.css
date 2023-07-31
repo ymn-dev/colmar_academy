@@ -11,6 +11,10 @@ img:hover {
   opacity: 0.8;
   cursor: pointer;
 }
+#logo:hover {
+  opacity: 1;
+}
+
 h2,
 h3,
 h4,
@@ -188,12 +192,23 @@ header {
     flex-direction: column;
   }
 
-  .header__container2 h2 {
-    font-size: 3.5vw; /* Set a proportional font size for h2 */
+  h2 {
+    font-size: 3.5vw;
+    font-weight: 750;
   }
-
+  .article__wrapper h2 {
+    font-size: 2.4vw;
+  }
+  h3 {
+    font-size: 2vw;
+    font-weight: 600;
+  }
+  p,
+  date {
+    font-size: 1.3vw;
+    font-weight: lighter;
+  }
   .header__container2 h3 {
-    font-size: 1.5vw; /* Set a proportional font size for h3 */
     margin: 2vw 0;
   }
   .article__wrapper {
